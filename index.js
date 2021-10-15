@@ -1,5 +1,5 @@
 let shortcutData = [];
-shortcutContents = document.getElementById("scRow");
+let shortcutContents = document.getElementById("scRow");
 
 const addShortcut = () => {
     const newShortcut = {
@@ -17,14 +17,11 @@ saveToLocalStorage();
 }
 
 const createShortcut = ({id, tag, imageurl, pageurl}) => {
-    return(`<div class="col-md-6 col-lg-4 mt-3" id=${id} key=${id}>
-    <div class="card bg-black" style="width: 18rem;">
+    return(`<div class="d-flex align-items-center col-md-6 col-lg-4" id=${id} key=${id} style="width:15rem; height:10rem; margin-top:7.5rem; margin-right: 1rem;">
+    <div class=" card bg-black ">
       <div class="card-header">
         <div class="d-flex justify-content-end">
-          <button type="button" class="btn btn-outline-light">
-            <i class="fa fa-pencil-alt"></i>
-          </button>
-          <button onclick="deleteShortcut(this)" type="button" name=${id} class="btn btn-outline-light">
+          <button name=${id} onclick="deleteShortcut(this)" type="button"  class="btn btn-outline-light">
             <i class="fa fa-trash"></i>
           </button>
         </div>
@@ -33,7 +30,7 @@ const createShortcut = ({id, tag, imageurl, pageurl}) => {
         src="${imageurl}"
         class="card-img-top"
         alt="image"
-        style="color:white"
+        style="background-color:black;"
       />
       <div class="card-body">
         <h6 class="card-title" style="color:white">${tag}</h6>

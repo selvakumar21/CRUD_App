@@ -14,12 +14,12 @@
       crossorigin="anonymous"
     />
 </head>
-<body class=" bg-black">
+<body class=" bg-black" onload="reloadShortcut()">
     <div class="modal fade" id="newScModal" tabindex="-1" aria-labelledby="newScModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="newScModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="newScModalLabel">Add Shortcut</h5>
       </div>
       <div class="modal-body">
         <div>
@@ -59,33 +59,6 @@
     <main class="d-flex justify-content-center container mt-5">
         <section>
           <div class="row" id="scRow">
-            <!-- <div class="col-md-6 col-lg-4 mt-3">
-              <div class="card bg-black" style="width: 9rem; height: 12rem">
-                <div class="card-header">
-                  <div class="d-flex justify-content-end">
-                    <button type="button" class="btn btn-outline-light mb-3">
-                      <i class="fa fa-pencil-alt"></i>
-                    </button>
-                    <button type="button" class="btn btn-outline-light mb-3">
-                      <i class="fa fa-trash"></i>
-                    </button>
-                  </div>
-                </div>
-                <img style="border-radius: 100%" 
-                  src="./assets/log.jfif"
-                  class="card-img-top"
-                  alt="image"
-                />
-                <div class="card-body">
-                  <h5 class="card-name ">Name</h5>
-                </div>
-                <div class="card-footer">
-                  <button type="button" class="btn btn-outline-light float-end">
-                    Open
-                  </button>
-                </div>
-              </div>
-            </div> -->
           </div>
         </section>
       </main>
